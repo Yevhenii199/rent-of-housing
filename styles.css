@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    object-fit: cover;
+}
+
+.carousel-images img {
+    min-width: 100%;
+    display: none;
+    height: 200px;
+    object-fit: cover;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 10;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.button-lang {
+    width: 92px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.button-lang:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    /* max-width: 1600px; */
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.container {
+    padding: 1rem;
+    /* max-width: 1600px; */
+    margin: 0 auto;
+    background-color: #0077b6;
+}
+
+.room-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.room-details {
+    padding: 0.6rem;
+}
+
+.room-details h2 {
+    margin: 0 0 0.5rem;
+}
+
+.info-block {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.map {
+    margin-top: 2rem;
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+.contact-buttons {
+    margin-top: 1rem;
+}
+
+.contact-buttons a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.contact-buttons a.facebook {
+    background-color: #1877f2;
+}
+
+.contact-buttons a.telegram {
+    background-color: #0088cc;
+}
+
+.contact-buttons a.viber {
+    background-color: #8c60c3;
+}
+
+.contact-buttons a.gmail {
+    background-color: #ea4335;
+}
+
+@media (min-width: 768px) {
+    .room-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .header-btn {
+        justify-content: flex-end;
+    }
+}
